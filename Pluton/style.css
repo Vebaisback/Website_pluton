@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    position: relative; /* Ebeveyn elemanı olacak */
+    background-color: #cdcdcd;
+}
+
+.logo {
+    position: absolute;
+    width: 100px; /* Piksel değerlerini belirtin */
+    height: 100px; /* Piksel değerlerini belirtin */
+    top: 50%; /* Logoyu 10 piksel üstte konumlandırın */
+    left: 1%; /* Logonun sol kenarından 10 piksel uzaklıkta */
+}
+
+.paven {
+    position: absolute;
+    left: 50%;
+}
+
+.button {
+    background-color: #989898; /* Arkaplan rengi */
+    color: white; /* Metin rengi */
+    padding: 10px 20px; /* Yatay ve dikey dolgu */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Köşeleri yuvarlat */
+    cursor: pointer; /* İmleç türü */
+
+    
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+/* Düğmeye fare ile üzerine gelinceki stil */
+.button:hover {
+    background-color: #8f8f8f; /* Hover rengi */
+}
+
+/* Düğmeye tıklandığında (aktif durumda) stil */
+.button:active {
+    background-color: #898989; /* Aktif renk */
+}
+
+.ust-sema {
+    background-image: linear-gradient(rgba(0, 0, 255, 0), rgba(105, 105, 105, 0.5)),url("stars.png");
+    padding-block-start: 100px;
+    margin: 0;
+    position: relative; /* Ebeveyn elemanı olacak */
+}
+
+.ust-cizgi {
+    background-color: rgb(80, 80, 80);
+    top: 100%;
+    padding-block-start: 5px;
+}
+
+.sol-panel {
+    width: 125px;
+    height: calc(100vh - 105px);
+    background: linear-gradient(270deg, #808080 0%, #adadad  100%);
+    position: absolute;
+    left: 0px; 
+    transition: 0.4s;
+    top: 100%; 
+}
+
+.sol-cizgi {
+    position: absolute;
+    width: 5px;
+    background-color: #adadad;
+    height: calc(100vh - 105px);
+    left: 125px;
+    transition: 0.4s;
+    top: 100%;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    width :50px;
+    height:50px;
+    position: absolute;
+    background-color: #989898a2;
+    border-radius: 10px;
+    top : 30px;
+    right :20px;
+}
+  
+.bar1, .bar2, .bar3 {
+    border-radius: 5px;
+    top : 12.5%;
+    left :14%;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
