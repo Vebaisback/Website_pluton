@@ -1,6 +1,6 @@
 # Pluton website
 
-* This site is for `trial` purposes, you can get the code if you need it.
+* This site is for `trial purposes`, you can get the code if you need it.
 
 ***Thank you***
 
